@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+body {
+    font-family: Lato,sans-serif;
+}
+a {
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header */
+header {
+  background-color: #2E383F;
+  height: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
+  width: 200px;
+  padding-left: 20px;
+}
+
+.cart-button {
+  width: 75px;
+  height: 25px;
+  color: #ffffff;
+  background-color: #2E383F;
+  border: solid #fff 1px;
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+.whithawayLogo {
+  width: 150px;
+}
+
+/* Products */
+.productsList {
+  margin-top: 50px;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: 230px;
+  height: 300px;
+  border: solid #DEDEDE 1px;
+  align-self: center;
+  margin-bottom: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card-image {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-brand {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  padding-left: 10px;
+  color: #568ABE;
+  text-decoration: none;
+}
+
+.card-name {
+  margin-top: 5px;
+  font-size: 14px;
+  padding-left: 10px;
+  color: #D6D6D6;
+  text-decoration: none;
+}
+
+.card-price {
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.card-quantity {
+  padding-left: 10px;
 }
